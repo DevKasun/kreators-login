@@ -35,3 +35,24 @@ textarea.materialize-textarea:focus:not([readonly]) {
       transform: unset;
   }
 }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 100vh;
+  background-color: rgba(66, 66, 66, 0.88);
+}
+.collapse-menu {
+  background-color: whitesmoke;
+}
+
+.collapsible {
+  margin: 0;
+}
+
+table {
+  color: whitesmoke;
+}
+table tr {
+  border-bottom-color: whitesmoke;
+}
