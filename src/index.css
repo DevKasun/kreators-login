@@ -1,0 +1,37 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('/img/tech.jpg') no-repeat;
+  background-size: cover;
+  background-color: darkslateblue;
+  min-height: 100%;
+}
+
+form {
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 512px;
+}
+form button, form h5 {
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+      left: unset;
+      -webkit-transform: unset;
+      transform: unset;
+  }
+}
