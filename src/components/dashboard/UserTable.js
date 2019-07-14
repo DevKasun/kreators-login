@@ -32,19 +32,21 @@ class UserTable extends Component {
             <div className="center">No users</div>
         )
         return (
-            <table className="highlight">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>User Name</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
+            <React.Fragment>
+                <table className="highlight">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>User Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    {usersList}
-                </tbody>
-            </table>
+                    <tbody>
+                        {usersList}
+                    </tbody>
+                </table>
+            </React.Fragment>
         )
     }
 }

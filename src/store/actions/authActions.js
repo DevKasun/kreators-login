@@ -1,5 +1,5 @@
-import { getFirestore, firestoreReducer } from "redux-firestore";
-
+import { firestoreReducer } from "redux-firestore";
+//getFirestore, 
 export const signIn = (credentials) => {
     return(dispatch, getState, { getFirebase }) => {
         const firebase = getFirebase();
@@ -28,7 +28,7 @@ export const signOut = () => {
 export const signUp = (newUser ) => {
     return(dispatch, getState, { getFirebase }) => {
         const firebase = getFirebase();
-        const firestore = getFirestore();
+        //const firestore = getFirestore();
 
         firebase.auth().createUserWithEmailAndPassword(
             newUser.email,

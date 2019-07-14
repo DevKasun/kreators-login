@@ -46,7 +46,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: whitesmoke;
 }
 
-.collapsible {
+ul.collapsible {
   margin: 0;
 }
 

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import UserTable from './UserTable';
+import DashNavBar from './DashNavBar';
 
 class Dashboard extends Component {
     render() {
@@ -12,20 +13,7 @@ class Dashboard extends Component {
         return (
             <div className="dashboard-grid">
                     <div className="collapse-menu">
-                        <ul className="collapsible">
-                            <li>
-                                <div className="collapsible-header">First</div>
-                                <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                            <li>
-                                <div className="collapsible-header">Second</div>
-                                <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                            <li>
-                                <div className="collapsible-header">Third</div>
-                                <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                        </ul>
+                        <DashNavBar/>  
                     </div>
                     <div className="content-side">
                         <div className="container">
